@@ -212,17 +212,17 @@ Code lisible avant tout
 
 ## 17. Ce que HTML n’est pas
 
-❌ Un langage de programmation
-❌ Un langage de mise en page
-❌ Un langage logique
+- ❌ Un langage de programmation
+- ❌ Un langage de mise en page
+- ❌ Un langage logique
 
-HTML = structure & sens
+- HTML = structure & sens
 
 ## 18. Question typique d’entretien
 
-“À quoi sert HTML ?”
+- “À quoi sert HTML ?”
 👉 À structurer sémantiquement le contenu d’une page web.
 
-“Différence div / section ?”
+- “Différence div / section ?”
 👉 div = neutre
 👉 section = contenu thématique
