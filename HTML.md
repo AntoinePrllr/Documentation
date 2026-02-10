@@ -210,7 +210,7 @@ Bonnes pratiques :
 
 Code lisible avant tout
 
-17. Ce que HTML n’est pas
+## 17. Ce que HTML n’est pas
 
 ❌ Un langage de programmation
 ❌ Un langage de mise en page
@@ -218,7 +218,7 @@ Code lisible avant tout
 
 HTML = structure & sens
 
-18. Question typique d’entretien
+## 18. Question typique d’entretien
 
 “À quoi sert HTML ?”
 👉 À structurer sémantiquement le contenu d’une page web.
