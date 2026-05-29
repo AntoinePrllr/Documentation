@@ -24,6 +24,29 @@ L'utilisation d'un `.gitignore` permet de garder un dépôt propre et sécurisé
 
 ---
 
+## Mettre en place un fichier .gitignore
+
+À la racine du projet, créer un fichier nommé :
+
+```text
+.gitignore
+```
+
+Exemple d'arborescence :
+
+```text
+mon-projet/
+│
+├── .gitignore
+├── index.html
+├── style.css
+└── script.js
+```
+
+Une fois le fichier créé, il suffit d'y ajouter les règles d'exclusion souhaitées.
+
+---
+
 ## Exemple de fichier .gitignore
 
 ```gitignore
@@ -78,6 +101,18 @@ Tous les fichiers ayant l'extension `.log` seront ignorés.
 
 ---
 
+## Vérifier que le .gitignore fonctionne
+
+Après avoir ajouté des règles dans le fichier `.gitignore`, exécuter :
+
+```bash
+git status
+```
+
+Les fichiers ignorés ne doivent plus apparaître dans la liste des fichiers à ajouter au dépôt.
+
+---
+
 ## Attention aux fichiers déjà suivis
 
 Le fichier `.gitignore` n'agit que sur les fichiers qui ne sont pas encore suivis par Git.
@@ -109,6 +144,33 @@ git commit -m "Mise à jour du .gitignore"
 
 ---
 
+## Exemple concret
+
+Supposons qu'un projet contienne le dossier suivant :
+
+```text
+mon-projet/
+│
+├── node_modules/
+├── .env
+├── src/
+└── package.json
+```
+
+Le fichier `.gitignore` pourra contenir :
+
+```gitignore
+node_modules/
+.env
+```
+
+Ainsi :
+
+* Le dossier `node_modules` ne sera pas envoyé sur GitHub.
+* Le fichier `.env` restera privé sur l'ordinateur du développeur.
+
+---
+
 ## Vérifier les fichiers ignorés
 
 Afficher les fichiers ignorés :
@@ -121,8 +183,9 @@ git status --ignored
 
 # À retenir
 
-* Le fichier `.gitignore` permet d'exclure des fichiers ou dossiers du dépôt Git.
-* Il est généralement placé à la racine du projet.
-* Il permet d'éviter d'envoyer des fichiers inutiles ou sensibles.
+* Le fichier `.gitignore` se crée à la racine du projet.
+* Il permet d'exclure des fichiers ou dossiers du dépôt Git.
+* Il évite d'envoyer des fichiers inutiles ou sensibles.
 * Les fichiers déjà suivis doivent être retirés avec `git rm --cached`.
-* Un bon `.gitignore` doit être créé dès le début du projet.
+* Il est recommandé de créer le `.gitignore` dès le début du projet.
+* Toujours vérifier son fonctionnement avec `git status`.
