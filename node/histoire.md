@@ -89,32 +89,6 @@ Même lorsqu'un projet est principalement en HTML et CSS, Node.js est souvent ut
 
 ---
 
-## Node.js dans mon projet
-
-Dans ce projet, Node.js n'est pas utilisé pour créer un serveur ou une application backend.
-
-Il est utilisé pour :
-
-* Installer Sass avec npm
-* Gérer les dépendances du projet
-* Exécuter le script de compilation SCSS vers CSS
-
-Exemple :
-
-```bash
-npm install sass
-```
-
-Puis :
-
-```bash
-npm run sass
-```
-
-qui compile automatiquement les fichiers SCSS en CSS.
-
----
-
 ## Quelques dates importantes
 
 | Année       | Événement                                                            |
