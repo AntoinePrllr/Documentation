@@ -4,9 +4,10 @@ Bienvenue dans ce dépôt de documentation sur le développement web.
 
 ## 📂 Menu
 
-- 🌐 [HTML](./html/)
-- 🎨 [CSS](./css/)
-- ⚡ [Sass](./sass/)
+- [HTML](./html/)
+- [CSS](./css/)
+- [Sass](./sass/)
+- [Git](./git/)
 
 ## 📖 À propos
 
